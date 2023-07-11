@@ -1,0 +1,21 @@
+{
+  "name": "phonepe-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashna99/phonepe-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashna99/phonepe-interview/issues"
+  },
+  "homepage": "https://github.com/ashna99/phonepe-interview#readme"
+}

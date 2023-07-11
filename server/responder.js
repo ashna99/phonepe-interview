@@ -14,7 +14,7 @@ class Responder {
       }
       requests[requestId] = new Request(requestId, data, requester);
       if (this.currentRequests.size >= this.maxConcurrentRequests || this.requestQueue.length > 0) {
-        this.requestQueue.enqueue({ requester, requestId });
+        this.requestQueue.push({ requester, requestId });
         return 'Request queued.';
       }
   
@@ -37,6 +37,7 @@ class Responder {
       this.currentRequests.delete(requestId);
       const request = requests[requestId];
       if (request) {
+        console.log(`processed request with requestId ${requestId} ${request.data}`);
         request.setStatus('Completed');
         request.setResult(result);
       } 

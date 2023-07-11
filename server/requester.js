@@ -4,7 +4,6 @@ class Requester {
     constructor(requesterId, quota) {
       this.requesterId = requesterId;
       this.quota = quota;
-      this.responder= Responder;
     }
   
     sendRequest(data) {
@@ -26,4 +25,4 @@ class Requester {
     }
   }
 
-  modules.export = Requester;
+  module.exports = Requester;
